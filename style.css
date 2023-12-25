@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "nunito", sans-serif;
+}
+.container {
+  border-collapse: collapse;
+  height: 100vh;
+}
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  color: #fff;
+  text-align: center;
+  line-height: 3.1rem;
+}
+header h1 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+}
+header span {
+  display: block;
+  font-weight: bold;
+  font-size: 5rem;
+}
+.description {
+  background-color: #19191a8a;
+  color: #fff;
+  border-radius: 8px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: minmax(25%);
+  height: 120px;
+  padding: 10px;
+}
+.description p {
+  margin-bottom: 5px;
+}
+a {
+  text-decoration: none;
+  color: aqua;
+}
+@media screen and (max-width: 990px) {
+  .description {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.4rem;
+  }
+  header h1 span {
+    font-size: 4rem;
+  }
+  .description {
+    font-size: 13px;
+    height: 130px;
+    width: 60%;
+  }
+}
+@media screen and (max-width: 460px) {
+  .description {
+    width: 80%;
+    height: 150px;
+  }
+}
